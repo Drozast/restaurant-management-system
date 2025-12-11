@@ -1,184 +1,296 @@
-# 🍽️ Sistema de Gestión para Restaurantes
+# 🍽️ Sistema Mise en Place para Restaurantes
 
-Sistema integral de gestión para restaurantes con control de inventario, ventas, turnos, gamificación y analíticas en tiempo real.
+Sistema digital de Mise en Place para restaurantes que transforma la preparación, organización y operación diaria del personal de cocina.
+
+## 🎯 ¿Qué es Mise en Place?
+
+**Mise en Place** (del francés "poner en su lugar") es la filosofía fundamental de cocina profesional que consiste en tener todo preparado, organizado y en su lugar antes del servicio.
+
+Este sistema digitaliza y optimiza ese proceso, ayudando a:
+- ✅ Preparar todo antes del servicio
+- ✅ Verificar inventarios y stock
+- ✅ Organizar tareas del turno
+- ✅ Mantener todo listo y bajo control
+- ✅ Mejorar la eficiencia operativa
 
 ## ✨ Características Principales
 
-### 📦 Gestión de Inventario
-- Control de stock en tiempo real
-- Alertas automáticas de bajo inventario
-- Sistema de restock con autorización
-- Historial de movimientos
-- Lista de compras automática
+### 📋 Checklist de Mise en Place Digital
+- Lista de tareas pre-servicio (AM/PM)
+- Verificación de preparaciones
+- Control de calidad paso a paso
+- Timestamps de completado
+- Responsabilidades claras por turno
 
-### 🍕 Gestión de Recetas
-- Biblioteca de recetas personalizable
-- Cálculo automático de ingredientes necesarios
-- Costos por receta
+### 📦 Control de Inventario en Tiempo Real
+- Verificar stock antes del servicio
+- Alertas de ingredientes bajos/críticos
+- Lista de compras automática
+- Sistema de reposición con autorización
+- Historial de movimientos
+
+### 🍕 Gestión de Recetas y Preparaciones
+- Recetas estandarizadas
+- Ingredientes y cantidades exactas
+- Cálculo automático de necesidades
 - Variantes y personalizaciones
 
-### 💰 Ventas y Reportes
-- Registro de ventas en tiempo real
-- Reportes diarios, semanales y mensuales
-- Análisis de productos más vendidos
-- Exportación a Excel y PDF
-- Dashboard con métricas clave
+### 👥 Organización de Turnos
+- Turnos AM/PM con responsabilidades claras
+- Apertura: verificar inventario y preparaciones
+- Cierre: checklist de limpieza y orden
+- Handoff entre turnos
+- Registro de incidencias
 
-### 👥 Gestión de Turnos
-- Turnos AM/PM configurables
-- Checklist de tareas por turno
-- Mise en place digital
-- Historial de cumplimiento
+### 💰 Registro de Ventas
+- Descuento automático de inventario
+- Saber qué se vendió y cuándo
+- Preparar según demanda histórica
+- Ajustar mise en place basado en tendencias
 
-### 🎮 Sistema de Gamificación
-- Puntos por tareas completadas
-- Niveles y experiencia
-- Badges y logros
+### 🎮 Gamificación del Trabajo
+- Puntos por tareas completadas correctamente
+- Reconocimiento al mejor preparador
+- Badges por consistencia y calidad
+- Motivación del equipo
 - Leaderboard semanal
-- Premios automáticos
-- Notificaciones en tiempo real
 
-### 📊 Analíticas
-- Gráficos interactivos con Recharts
-- Tendencias de ventas
-- Rendimiento de empleados
-- Distribución de inventario
-- Frecuencia de reposición
+### 📊 Reportes y Analíticas
+- ¿Qué se está usando más?
+- ¿Qué hay que preparar más?
+- Tendencias de consumo
+- Eficiencia del equipo
+- Exportación a Excel/PDF
 
-### 🔄 Tiempo Real
-- WebSockets para actualizaciones instantáneas
-- Notificaciones push
-- Sincronización automática entre dispositivos
+### 🔄 Actualizaciones en Tiempo Real
+- Todo el equipo ve los cambios al instante
+- WebSockets para sincronización
+- Notificaciones de bajo stock
+- Alertas de tareas críticas
+
+## 🎓 Filosofía: De lo Manual a lo Digital
+
+### Antes (Manual)
+- ❌ Listas de papel que se pierden
+- ❌ Inventarios mentales imprecisos
+- ❌ Comunicación verbal entre turnos
+- ❌ Olvidos de preparaciones
+- ❌ Stock que se acaba sin aviso
+
+### Ahora (Digital)
+- ✅ Checklist digital siempre disponible
+- ✅ Inventario exacto en tiempo real
+- ✅ Traspaso de turno documentado
+- ✅ Alertas automáticas de pendientes
+- ✅ Lista de compras generada automáticamente
 
 ## 🚀 Tecnologías
 
 ### Frontend
 - React + TypeScript
-- Vite - Build tool
-- TailwindCSS - Estilos
-- Zustand - State management
-- Socket.IO Client - WebSockets
-- Recharts - Gráficos
-- React Hot Toast - Notificaciones
+- TailwindCSS - UI moderna
+- Socket.IO - Tiempo real
+- Zustand - Estado global
+- Recharts - Visualizaciones
 
 ### Backend
-- Node.js + TypeScript
-- Express - API REST
-- Better-SQLite3 - Base de datos
+- Node.js + Express
+- SQLite - Base de datos
 - Socket.IO - WebSockets
-- Bcrypt - Encriptación
-- Node-Cron - Tareas programadas
-- XLSX + jsPDF - Exportaciones
+- Bcrypt - Seguridad
+- Cron Jobs - Automatización
 
 ## 📋 Requisitos
 
 - Node.js 18+
 - npm o yarn
-- Puertos 3000 (frontend) y 3001 (backend) disponibles
+- Navegador moderno
+- Red local (WiFi recomendado)
 
-## ⚙️ Instalación
+## ⚙️ Instalación Rápida
 
-### 1. Clonar el repositorio
+### 1. Clonar e instalar
 
-\`\`\`bash
-git clone https://github.com/tu-usuario/restaurant-management-system.git
-cd restaurant-management-system
-\`\`\`
-
-### 2. Instalar dependencias
-
-\`\`\`bash
+```bash
+git clone https://github.com/Drozast/restaurant-management-system.git mi-restaurante
+cd mi-restaurante
 npm install
-\`\`\`
+```
 
-### 3. Configurar el negocio
+### 2. Configurar tu restaurante
 
-Copia el archivo de configuración:
-
-\`\`\`bash
+```bash
 cp config.template.json config.json
-\`\`\`
+```
 
-Edita \`config.json\` con los datos de tu negocio.
+Edita `config.json`:
 
-### 4. Iniciar en desarrollo
+```json
+{
+  "business": {
+    "name": "Pizzería El Horno",
+    "type": "pizzeria"
+  },
+  "admin": {
+    "rut": "12345678-9",
+    "name": "Chef Principal",
+    "password": "1234"
+  }
+}
+```
 
-\`\`\`bash
+### 3. Iniciar
+
+```bash
 npm run dev
-\`\`\`
+```
 
-Abre tu navegador en:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:3001
+Abre: http://localhost:3000
 
-### 5. Build para producción
+## 👨‍🍳 Flujo de Trabajo Diario
 
-\`\`\`bash
-npm run build
-npm start
-\`\`\`
+### 🌅 Turno AM (Mañana)
 
-## 👤 Credenciales por Defecto
+1. **Login** - Empleado inicia sesión
+2. **Abrir Turno AM** - Sistema muestra:
+   - Estado actual del inventario
+   - Ingredientes críticos
+   - Tareas pendientes del turno anterior
+3. **Checklist Mise en Place**:
+   - ☑️ Verificar stock de ingredientes
+   - ☑️ Preparar masas del día
+   - ☑️ Cortar vegetales
+   - ☑️ Preparar salsas
+   - ☑️ Verificar temperaturas
+   - ☑️ Organizar estación de trabajo
+4. **Durante el Servicio**:
+   - Registrar ventas
+   - Restockear según necesidad
+   - Ver alertas de bajo stock
+5. **Cierre de Turno**:
+   - Completar checklist de cierre
+   - Registrar incidencias
+   - Handoff a turno PM
 
-Después de la instalación:
+### 🌆 Turno PM (Tarde/Noche)
 
-- **RUT**: 11111111-1
-- **Contraseña**: 1111
+1. **Recibir Turno** - Ver notas del turno anterior
+2. **Verificar Mise en Place** - Todo listo para servicio
+3. **Servicio** - Registrar ventas
+4. **Cierre del Día**:
+   - Limpieza y orden
+   - Inventario final
+   - Lista de compras para mañana
+   - Cerrar turno
 
-## 🔧 Configuración
+### 📊 Semanal (Chef/Admin)
 
-### Variables de Entorno
+- Revisar reportes de ventas
+- Analizar consumo de ingredientes
+- Calcular premios del equipo
+- Ajustar recetas según tendencias
+- Planificar compras
 
-Crea un archivo \`.env\`:
+## 🎮 Sistema de Puntos y Motivación
 
-\`\`\`env
-PORT=3001
-CORS_ORIGIN=http://localhost:3000
-NODE_ENV=development
-DB_PATH=./data/restaurant.db
-\`\`\`
+### ¿Por qué gamificación en cocina?
 
-### Cron Jobs Automáticos
+Un equipo motivado es más:
+- ✅ Consistente en calidad
+- ✅ Rápido en preparación
+- ✅ Cuidadoso con el inventario
+- ✅ Comprometido con el orden
 
-- **Premios semanales**: Sábados 23:00
-- **Limpieza de datos**: Primer día del mes 02:00
-- **Backup automático**: Diario 03:00
+### Cómo funciona
 
-## 🐳 Docker
+**Gana puntos por:**
+- Completar mise en place a tiempo
+- Cumplir checklist completo
+- No desperdiciar inventario
+- Consistencia semanal
+- Puntualidad en turnos
 
-\`\`\`bash
-docker-compose up -d
-\`\`\`
+**Niveles y badges:**
+- 🌱 Novato (0-500 pts)
+- ⭐ Dedicado (500-1000 pts)
+- 🏆 Experto (1000-2000 pts)
+- 👑 Maestro (2000-5000 pts)
+- 💎 Leyenda (5000+ pts)
 
-## 📦 Estructura
+**Premios semanales automáticos:**
+- Sistema calcula puntos cada sábado
+- Reconocimiento al mejor del equipo
+- Notificaciones de logros desbloqueados
 
-\`\`\`
-restaurant-management-system/
-├── src/                    # Frontend React
-│   ├── components/        # Componentes
-│   ├── pages/            # Páginas
-│   ├── hooks/            # Custom hooks
-│   ├── lib/              # API client
-│   └── store/            # State management
-├── server/                # Backend Node.js
-│   ├── database/         # BD y migraciones
-│   ├── routes/           # API routes
-│   ├── jobs/             # Cron jobs
-│   ├── middleware/       # Middlewares
-│   └── utils/            # Utilidades
-├── data/                  # Base de datos SQLite
-├── config.json           # Configuración
-└── package.json
-\`\`\`
+## 🔧 Configuración por Tipo de Negocio
+
+### Pizzería
+```json
+{
+  "business": { "type": "pizzeria" },
+  "inventory": {
+    "categories": ["masas", "proteínas", "quesos", "vegetales", "salsas"]
+  }
+}
+```
+
+### Restaurante
+```json
+{
+  "business": { "type": "restaurant" },
+  "inventory": {
+    "categories": ["proteínas", "vegetales", "lácteos", "granos", "especias"]
+  }
+}
+```
+
+### Café/Bakery
+```json
+{
+  "business": { "type": "cafe" },
+  "inventory": {
+    "categories": ["harinas", "lácteos", "café", "endulzantes", "especias"]
+  }
+}
+```
+
+## 💡 Beneficios Clave
+
+### Para el Chef/Dueño
+- 📊 Visibilidad total de la operación
+- 💰 Control de costos e inventario
+- 📈 Datos para tomar decisiones
+- 👥 Equipo más organizado
+- 🎯 Menos desperdicios
+
+### Para el Equipo
+- ✅ Saber exactamente qué hacer
+- 🎮 Reconocimiento por buen trabajo
+- 📱 Herramienta fácil de usar
+- 👥 Mejor coordinación
+- 🏆 Motivación y metas claras
+
+### Para la Operación
+- ⚡ Servicio más rápido
+- 🎯 Mayor consistencia
+- 📦 Nunca quedarse sin stock
+- 🔄 Mejor comunicación entre turnos
+- 📊 Todo documentado y medible
 
 ## 🔐 Seguridad
 
-- ✅ Contraseñas encriptadas con bcrypt
-- ✅ Rate limiting en login (5 intentos/15 min)
-- ✅ CORS configurado
-- ✅ Validación de entrada
-- ✅ Autorización por roles
-- ✅ Backup automático
+- ✅ Contraseñas encriptadas (bcrypt)
+- ✅ Rate limiting en login
+- ✅ Autorización por roles (Chef/Empleado)
+- ✅ Restock requiere aprobación de admin
+- ✅ Backup automático diario
+
+## 📱 Uso en Tablet/Móvil
+
+Responsive design optimizado para:
+- 📱 Smartphones (empleados en cocina)
+- 📱 Tablets (estación de trabajo)
+- 💻 Desktop (administración)
 
 ## 📄 Licencia
 
@@ -186,4 +298,5 @@ Propietario. Todos los derechos reservados.
 
 ---
 
-**Desarrollado para optimizar la gestión de restaurantes** 🍽️
+**"Everything in its place, a place for everything"** 
+**"Todo en su lugar, un lugar para todo"** 🍽️
