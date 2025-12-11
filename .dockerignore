@@ -1,0 +1,53 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# Development files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Build files (will be created in container)
+dist
+build
+.next
+out
+
+# Database (will be created at runtime)
+data/*.db
+data/*.db-journal
+
+# Logs
+logs
+*.log
+
+# Testing
+coverage
+.nyc_output
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+README.md
+.prettierrc
+.eslintrc
+.editorconfig

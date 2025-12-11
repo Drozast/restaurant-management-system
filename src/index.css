@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA;
+  color: #222629;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+  color: #1A1A1A;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CFCFCF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #86C232;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Forzar estilos en inputs para evitar autocompletado del navegador */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #1A1A1A !important;
+  box-shadow: 0 0 0 30px white inset !important;
+  caret-color: #1A1A1A !important;
+}
+
+/* Asegurar que el texto sea visible en todos los estados */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+  color: #1A1A1A !important;
+  -webkit-text-fill-color: #1A1A1A !important;
+}
+
+/* Para inputs con fondo oscuro */
+input.dark-input {
+  color: #FAFAFA !important;
+  -webkit-text-fill-color: #FAFAFA !important;
+}
+
+input.dark-input:-webkit-autofill,
+input.dark-input:-webkit-autofill:hover,
+input.dark-input:-webkit-autofill:focus,
+input.dark-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1A1A1A inset !important;
+  -webkit-text-fill-color: #FAFAFA !important;
+  box-shadow: 0 0 0 30px #1A1A1A inset !important;
+  caret-color: #FAFAFA !important;
+}
+
+/* Animación para la card motivacional */
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

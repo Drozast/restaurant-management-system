@@ -1,0 +1,85 @@
+{
+  "business": {
+    "name": "Mi Restaurante",
+    "type": "restaurant",
+    "description": "Sistema de gestión integral para restaurantes"
+  },
+  "admin": {
+    "rut": "11111111-1",
+    "name": "Administrador",
+    "password": "1111"
+  },
+  "features": {
+    "gamification": true,
+    "analytics": true,
+    "shifts": true,
+    "inventory": true,
+    "sales": true,
+    "reports": true,
+    "shopping_list": true
+  },
+  "inventory": {
+    "default_unit": "g",
+    "categories": [
+      "proteínas",
+      "vegetales",
+      "lácteos",
+      "salsas",
+      "masas",
+      "especias"
+    ]
+  },
+  "shifts": {
+    "types": ["AM", "PM"],
+    "am_start": "08:00",
+    "am_end": "16:00",
+    "pm_start": "16:00",
+    "pm_end": "00:00"
+  },
+  "gamification": {
+    "enabled": true,
+    "weekly_calculation": {
+      "day": "Saturday",
+      "time": "23:00",
+      "timezone": "America/Santiago"
+    },
+    "badges": [
+      {
+        "name": "Novato",
+        "description": "Completa tu primera semana",
+        "icon": "🌱",
+        "points_required": 0
+      },
+      {
+        "name": "Dedicado",
+        "description": "Alcanza 500 puntos",
+        "icon": "⭐",
+        "points_required": 500
+      },
+      {
+        "name": "Experto",
+        "description": "Alcanza 1000 puntos",
+        "icon": "🏆",
+        "points_required": 1000
+      },
+      {
+        "name": "Maestro",
+        "description": "Alcanza 2000 puntos",
+        "icon": "👑",
+        "points_required": 2000
+      },
+      {
+        "name": "Leyenda",
+        "description": "Alcanza 5000 puntos",
+        "icon": "💎",
+        "points_required": 5000
+      }
+    ]
+  },
+  "backup": {
+    "enabled": true,
+    "time": "03:00",
+    "retention_days": 30,
+    "path": "./data/backups"
+  }
+}
